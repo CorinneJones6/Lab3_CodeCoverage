@@ -12,11 +12,11 @@
 		B602A77A2B57325300BC447C /* cmdline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B602A7782B57325300BC447C /* cmdline.cpp */; };
 		B602A7852B57334900BC447C /* Expr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B602A7832B57334900BC447C /* Expr.cpp */; };
 		B602A7942B59AC6100BC447C /* Tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B602A7932B59AC6100BC447C /* Tests.cpp */; };
-		BF282C6E2B6C11F600798498 /* testCov.m in Sources */ = {isa = PBXBuildFile; fileRef = BF282C6D2B6C11F600798498 /* testCov.m */; };
 		BF282C722B6C12EA00798498 /* cmdline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B602A7782B57325300BC447C /* cmdline.cpp */; };
 		BF282C732B6C12F400798498 /* Tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B602A7932B59AC6100BC447C /* Tests.cpp */; };
 		BF282C742B6C12F700798498 /* Expr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B602A7832B57334900BC447C /* Expr.cpp */; };
-		BF282C782B6C151300798498 /* run.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF282C762B6C151300798498 /* run.cpp */; };
+		BF282C802B6C1CF300798498 /* TestCoverage.m in Sources */ = {isa = PBXBuildFile; fileRef = BF282C7F2B6C1CF300798498 /* TestCoverage.m */; };
+		BF282C872B6C1E7600798498 /* run.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BF282C852B6C1E7600798498 /* run.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,10 +42,10 @@
 		B602A7932B59AC6100BC447C /* Tests.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Tests.cpp; sourceTree = "<group>"; };
 		B602A7962B59AEF800BC447C /* catch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = catch.h; sourceTree = "<group>"; };
 		BF282C6B2B6C11F600798498 /* testCov.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testCov.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF282C6D2B6C11F600798498 /* testCov.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = testCov.m; sourceTree = "<group>"; };
-		BF282C762B6C151300798498 /* run.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = run.cpp; sourceTree = "<group>"; };
-		BF282C772B6C151300798498 /* run.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = run.hpp; sourceTree = "<group>"; };
-		BF282C842B6C1D7900798498 /* testCov.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = testCov.xctestplan; sourceTree = "<group>"; };
+		BF282C7D2B6C1CF300798498 /* TestCoverage.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestCoverage.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF282C7F2B6C1CF300798498 /* TestCoverage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestCoverage.m; sourceTree = "<group>"; };
+		BF282C852B6C1E7600798498 /* run.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = run.cpp; sourceTree = "<group>"; };
+		BF282C862B6C1E7600798498 /* run.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = run.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,15 +63,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BF282C7A2B6C1CF300798498 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		B602A74D2B572B4F00BC447C = {
 			isa = PBXGroup;
 			children = (
-				BF282C842B6C1D7900798498 /* testCov.xctestplan */,
 				B602A7582B572B4F00BC447C /* MSDScript */,
-				BF282C6C2B6C11F600798498 /* testCov */,
+				BF282C7E2B6C1CF300798498 /* TestCoverage */,
 				B602A7572B572B4F00BC447C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,6 +87,7 @@
 			children = (
 				B602A7562B572B4F00BC447C /* MSDScript */,
 				BF282C6B2B6C11F600798498 /* testCov.xctest */,
+				BF282C7D2B6C1CF300798498 /* TestCoverage.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,14 +107,14 @@
 			path = MSDScript;
 			sourceTree = "<group>";
 		};
-		BF282C6C2B6C11F600798498 /* testCov */ = {
+		BF282C7E2B6C1CF300798498 /* TestCoverage */ = {
 			isa = PBXGroup;
 			children = (
-				BF282C6D2B6C11F600798498 /* testCov.m */,
-				BF282C762B6C151300798498 /* run.cpp */,
-				BF282C772B6C151300798498 /* run.hpp */,
+				BF282C7F2B6C1CF300798498 /* TestCoverage.m */,
+				BF282C852B6C1E7600798498 /* run.cpp */,
+				BF282C862B6C1E7600798498 /* run.hpp */,
 			);
-			path = testCov;
+			path = TestCoverage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +154,23 @@
 			productReference = BF282C6B2B6C11F600798498 /* testCov.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		BF282C7C2B6C1CF300798498 /* TestCoverage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF282C812B6C1CF300798498 /* Build configuration list for PBXNativeTarget "TestCoverage" */;
+			buildPhases = (
+				BF282C792B6C1CF300798498 /* Sources */,
+				BF282C7A2B6C1CF300798498 /* Frameworks */,
+				BF282C7B2B6C1CF300798498 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestCoverage;
+			productName = TestCoverage;
+			productReference = BF282C7D2B6C1CF300798498 /* TestCoverage.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -160,6 +184,9 @@
 						CreatedOnToolsVersion = 14.3.1;
 					};
 					BF282C6A2B6C11F600798498 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					BF282C7C2B6C1CF300798498 = {
 						CreatedOnToolsVersion = 14.3.1;
 					};
 				};
@@ -179,12 +206,20 @@
 			targets = (
 				B602A7552B572B4F00BC447C /* MSDScript */,
 				BF282C6A2B6C11F600798498 /* testCov */,
+				BF282C7C2B6C1CF300798498 /* TestCoverage */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		BF282C692B6C11F600798498 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF282C7B2B6C1CF300798498 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -210,11 +245,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF282C782B6C151300798498 /* run.cpp in Sources */,
 				BF282C742B6C12F700798498 /* Expr.cpp in Sources */,
 				BF282C732B6C12F400798498 /* Tests.cpp in Sources */,
 				BF282C722B6C12EA00798498 /* cmdline.cpp in Sources */,
-				BF282C6E2B6C11F600798498 /* testCov.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF282C792B6C1CF300798498 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF282C802B6C1CF300798498 /* TestCoverage.m in Sources */,
+				BF282C872B6C1E7600798498 /* run.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +424,42 @@
 			};
 			name = Release;
 		};
+		BF282C822B6C1CF300798498 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MSD.TestCoverage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF282C832B6C1CF300798498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = MSD.TestCoverage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -408,6 +486,15 @@
 			buildConfigurations = (
 				BF282C6F2B6C11F600798498 /* Debug */,
 				BF282C702B6C11F600798498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF282C812B6C1CF300798498 /* Build configuration list for PBXNativeTarget "TestCoverage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF282C822B6C1CF300798498 /* Debug */,
+				BF282C832B6C1CF300798498 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "A5BF5F34-EA13-4C9D-930D-EB7F053FA595",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "commandLineArgumentEntries" : [
+      {
+        "argument" : "--test"
+      }
+    ]
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:MSDScript.xcodeproj",
+        "identifier" : "BF282C6A2B6C11F600798498",
+        "name" : "testCov"
+      }
+    }
+  ],
+  "version" : 1
+}

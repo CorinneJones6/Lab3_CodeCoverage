@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "2FA0B40D-A150-4659-8176-6FDEACEAD613",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "commandLineArgumentEntries" : [
+      {
+        "argument" : "--test"
+      }
+    ]
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:CodeCoverageTry3.xcodeproj",
+        "identifier" : "BF282CA62B6C1FB000798498",
+        "name" : "CodeCoverage"
+      }
+    }
+  ],
+  "version" : 1
+}
